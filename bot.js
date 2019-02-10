@@ -64,7 +64,6 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 **
 ${prefix}allbots/لعرض جميع البوتات الي بالسيرفر
 ${prefix}server/يعرض لك معلومات عن السيرفر
-${prefix}bot/يعرض لك كل معلومات البوت
 ${prefix}count/يعرض لك عدد الاشخاص بالسيرفر بدون بوتات
 ${prefix}invites/ يعرض لك  عدد انفايتاتك بالسيرفر 
 ${prefix}invinfo <invitelink here> / لمعلومات عن الدعوه
@@ -153,7 +152,7 @@ ${prefix}فوائد ونصائح  / هل تعلم
 ${prefix}يعطيك عقابات قاسية / عقاب 
 =.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.
 welcome يتم الترحيب فى روم باسم
-G.setwelcomer <text channel name> لاختيار روم للترحيب
+${prefix}setwelcomer <text channel name> لاختيار روم للترحيب
 ${prefix}voiceonline / لتفعيل روم الفويس اونلاين
 **
    
