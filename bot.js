@@ -88,8 +88,6 @@ ${prefix}avatar/صورتك او صورة الي تمنشنو
 ${prefix}embed/يكرر الي تقولو بشكل حلو
 ${prefix}emoji <any things>/لتحويل اي كلمه تقولها الي ايموجي
 ${prefix}inv/لدعوة البوت الى سيرفرك
-${prefix}support/سيرفر الدعم
-${prefix}contact/ارسال اقتراح او لمراسلة صاحب البوت
 **
   `
 ,`
@@ -648,13 +646,13 @@ message.channel.send({embed});
 }
 });
 client.on('message', message => {
-    if (message.content.startsWith("G.bans")) {
+    if (message.content.startsWith("$bans")) {
         message.guild.fetchBans()
         .then(bans => message.channel.send(`Number of banned persons **${bans.size}** `))
 }
 });
 client.on('message', message => {
-    if (message.content.startsWith("G.avatar")) {
+    if (message.content.startsWith("$avatar")) {
 if(!message.channel.guild) return;
         var mentionned = message.mentions.users.first();
     var client;
@@ -1295,7 +1293,7 @@ if(bz.content.startsWith(prefix + 'make')) {
        });
 client.on('message', message => {
           let args = message.content.split(' ').slice(1);
-   if(message.content.split(' ')[0] == 'G.color'){
+   if(message.content.split(' ')[0] == '&color'){
            const embedd = new Discord.RichEmbed()
      .setFooter('Requested by '+message.author.username, message.author.avatarURL)
    .setDescription(`**There's No Color With This Number ** :x: `)
